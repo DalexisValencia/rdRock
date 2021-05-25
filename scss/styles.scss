@@ -1,0 +1,35 @@
+@import "components/vals";
+@import "components/content";
+@import "components/header"; 
+@import "components/footer";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+li{
+    list-style: none;
+}
+@font-face {
+    font-family: 'Bemio';
+    src: url('fonts/Bemio.otf');
+}
+@font-face {
+    font-family: 'BemioItalic';
+    src: url('fonts/Bemio Italic.otf');
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Bold.ttf');
+}
+@font-face {
+    font-family: 'Montserrat-regular';
+    src: url('fonts/Montserrat-Regular.ttf');
+}    
+
+@font-face {
+    font-family: 'MuseoSans_700';
+    src: url('fonts/MuseoSans_700.ttf');
+}
+
+  

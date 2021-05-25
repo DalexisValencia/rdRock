@@ -1,0 +1,10 @@
+#abi-header{
+    background-color: $primary_color; 
+    nav {
+        padding: 8px 30px;
+        text-align: center;
+        @media screen and (min-width: 769px){
+            text-align: left;
+        }
+    }
+}

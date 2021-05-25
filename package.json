@@ -1,0 +1,31 @@
+{
+  "name": "gulp-config",
+  "version": "1.0.0",
+  "description": "instalar gulp globalmente\r npm install gulp -g",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DalexisValencia/gulp-config.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DalexisValencia/gulp-config/issues"
+  },
+  "homepage": "https://github.com/DalexisValencia/gulp-config#readme",
+  "dependencies": {
+    "gulp-sass": "^4.1.0",
+    "gulp-livereload": "^4.0.2",
+    "gulp-connect": "^5.7.0",
+    "del": "^6.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify": "^3.1.0",
+    "gulp-clean-css": "^4.3.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
