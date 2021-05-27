@@ -302,7 +302,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
-    .abi-form_content .abi-form_group.abi-upload-form .js-form-item.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso #edit-image-upload--label {
+    .abi-form_content .abi-form_group.abi-upload-form .js-form-item.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso label[id^=edit-image-upload],
+    .abi-form_content .abi-form_group.abi-upload-form .js-form-item.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso label#edit-image-upload--label {
       font-family: "Montserrat";
       font-style: normal;
       font-weight: bold;
@@ -316,11 +317,13 @@
       display: inline-block;
       cursor: pointer;
       text-transform: none; }
-      .abi-form_content .abi-form_group.abi-upload-form .js-form-item.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso #edit-image-upload--label:focus + label,
-      .abi-form_content .abi-form_group.abi-upload-form .js-form-item.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso #edit-image-upload--label + label:hover {
+      .abi-form_content .abi-form_group.abi-upload-form .js-form-item.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso label[id^=edit-image-upload]:focus + label,
+      .abi-form_content .abi-form_group.abi-upload-form .js-form-item.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso label[id^=edit-image-upload] + label:hover,
+      .abi-form_content .abi-form_group.abi-upload-form .js-form-item.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso label#edit-image-upload--label:focus + label,
+      .abi-form_content .abi-form_group.abi-upload-form .js-form-item.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso label#edit-image-upload--label + label:hover {
         color: white;
         background-color: #E91D76; }
-    .abi-form_content .abi-form_group.abi-upload-form .js-form-item.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso #edit-image-upload {
+    .abi-form_content .abi-form_group.abi-upload-form .js-form-item.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso #edit-image-upload.abi-file_control.js-form-managed-file.form-managed-file {
       display: none; }
     .abi-form_content .abi-form_group.abi-upload-form .js-form-item.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso #edit-image-upload--description {
       margin: 20px 0px;
@@ -354,6 +357,36 @@
       .abi-form_content .abi-form_group.abi-upload-form .upload_image_redrock + label:hover {
         color: white;
         background-color: #E91D76; }
+    .abi-form_content .abi-form_group.abi-upload-form div[id^=ajax-wrapper--] .js-form-item.js-form-type-managed-file.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso label {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      border-radius: 50px;
+      text-align: center;
+      width: 312px;
+      color: #FFAED1;
+      border: 1px solid #E91D76;
+      background-color: #FFAED1;
+      display: inline-block;
+      cursor: pointer;
+      text-transform: none;
+      position: relative; }
+      .abi-form_content .abi-form_group.abi-upload-form div[id^=ajax-wrapper--] .js-form-item.js-form-type-managed-file.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso label:focus + label,
+      .abi-form_content .abi-form_group.abi-upload-form div[id^=ajax-wrapper--] .js-form-item.js-form-type-managed-file.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso label + label:hover {
+        color: white;
+        background-color: #E91D76; }
+      .abi-form_content .abi-form_group.abi-upload-form div[id^=ajax-wrapper--] .js-form-item.js-form-type-managed-file.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso label:before {
+        content: "Foto cargada exitosamente";
+        text-align: center;
+        color: #000;
+        width: 90%;
+        display: block;
+        margin: 0px auto;
+        position: absolute;
+        top: 25%;
+        background-repeat: no-repeat;
+        background-position: right; }
   .abi-form_content .abi-form_group .max-size-upload {
     margin: 20px 0px;
     width: 100%;

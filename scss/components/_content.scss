@@ -389,29 +389,30 @@
             flex-wrap: wrap;
             justify-content: center;
             .js-form-item.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso{
-                #edit-image-upload--label{
-                        font: {
-                            family: $general_font;
-                            style: normal;
-                            weight: bold;
-                            size: 14px;
-                        }
-                        border-radius: 50px;
-                        text-align: center;
-                        width: 312px;
-                        color: $color_border_inputs;
-                        border: 1px solid $primary_color;
-                        background-color: white;
-                        display: inline-block;
-                        cursor: pointer;
-                        text-transform: none;
-                        &:focus + label,
-                        & + label:hover {
-                            color: white;
-                            background-color: $primary_color;
-                        }
+                label[id^=edit-image-upload],
+                label#edit-image-upload--label{
+                    font: {
+                        family: $general_font;
+                        style: normal;
+                        weight: bold;
+                        size: 14px;
+                    }
+                    border-radius: 50px;
+                    text-align: center;
+                    width: 312px;
+                    color: $color_border_inputs;
+                    border: 1px solid $primary_color;
+                    background-color: white;
+                    display: inline-block;
+                    cursor: pointer;
+                    text-transform: none;
+                    &:focus + label,
+                    & + label:hover {
+                        color: white;
+                        background-color: $primary_color;
+                    }
                 }
-                #edit-image-upload{
+                #edit-image-upload.abi-file_control.js-form-managed-file.form-managed-file{
                     display: none;
                 }
                 #edit-image-upload--description{
@@ -460,6 +461,45 @@
                 & + label:hover {
                     color: white;
                     background-color: $primary_color;
+                }
+            }
+            div[id^=ajax-wrapper--]{
+                .js-form-item.js-form-type-managed-file.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso{
+                    label {
+                        font: {
+                            family: $general_font;
+                            style: normal;
+                            weight: bold;
+                            size: 14px;
+                        }
+                        border-radius: 50px;
+                        text-align: center;
+                        width: 312px;
+                        color: #FFAED1;
+                        border: 1px solid $primary_color;
+                        background-color: #FFAED1;
+                        display: inline-block;
+                        cursor: pointer;
+                        text-transform: none;
+                        position: relative;
+                        &:focus + label,
+                        & + label:hover {
+                            color: white;
+                            background-color: $primary_color;
+                        }
+                        &:before{
+                            content: "Foto cargada exitosamente";
+                            text-align: center;
+                            color: #000;
+                            width: 90%; 
+                            display: block;
+                            margin: 0px auto;
+                            position: absolute;
+                            top: 25%;
+                            background-repeat: no-repeat;
+                            background-position: right;
+                        }
+                    }
                 }
             }
         }
