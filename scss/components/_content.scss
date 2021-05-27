@@ -389,8 +389,30 @@
             flex-wrap: wrap;
             justify-content: center;
             .js-form-item.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso{
+                #edit-image-upload--label{
+                        font: {
+                            family: $general_font;
+                            style: normal;
+                            weight: bold;
+                            size: 14px;
+                        }
+                        border-radius: 50px;
+                        text-align: center;
+                        width: 312px;
+                        color: $color_border_inputs;
+                        border: 1px solid $primary_color;
+                        background-color: white;
+                        display: inline-block;
+                        cursor: pointer;
+                        text-transform: none;
+                        &:focus + label,
+                        & + label:hover {
+                            color: white;
+                            background-color: $primary_color;
+                        }
+                }
                 #edit-image-upload{
-
+                    display: none;
                 }
                 #edit-image-upload--description{
                     margin: 20px 0px;
