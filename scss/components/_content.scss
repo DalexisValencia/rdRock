@@ -204,7 +204,7 @@
 {
     padding: 60px 30px 40px;
     background: {
-        image: url(../img/backgroud-post-header.svg)
+        image: url('../img/backgroud-post-header.svg')
     }
     h1, h2{
         color: $color_font_title_primary;
@@ -236,7 +236,7 @@
 }
 .abi-form_content{
     padding: 30px;
-    background-image: url(/img/background-form.png);
+    background-image: url('../img/background-form.png');
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
@@ -369,6 +369,18 @@
             select{
                 width: 30%;
             }
+            .wrapper-birthday{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                .js-form-item{
+                    width: 30%;
+                    select{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
         }
         &.abi-upload-form{
             border-bottom: 1.5px solid $primary_color;
@@ -376,6 +388,21 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            .js-form-item.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso{
+                #edit-image-upload{
+
+                }
+                #edit-image-upload--description{
+                    margin: 20px 0px;
+                    width: 100%;
+                    text-align: center;
+                    display: block;
+                    font: {
+                        family: 'Montserrat-regular' !important;
+                        size: 12px;
+                    }
+                }
+            }
             .upload_image_redrock{
                 width: 0.1px;
                 height: 0.1px;
@@ -453,6 +480,7 @@
     }
     .abi-actions_form{
         text-align: center;
+        .input-send-button,
         button{
             @include btn-primary; 
         }
@@ -617,5 +645,18 @@
                 }
             }
         }
+    }
+}
+
+.js-form-item.js-form-type-checkbox {
+    display: flex;
+    align-items: flex-start;
+    .description{
+        font: {
+            size: 12px;
+            family: 'Montserrat-regular' !important;
+        }
+        text-align: left;
+        padding-left: 15px;
     }
 }
