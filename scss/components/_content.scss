@@ -413,7 +413,9 @@
                     }
                 }
                 #edit-image-upload.abi-file_control.js-form-managed-file.form-managed-file{
-                    display: none;
+                    input{
+                        display: none;
+                    }
                 }
                 #edit-image-upload--description{
                     margin: 20px 0px;
