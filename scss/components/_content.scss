@@ -413,6 +413,10 @@
                     }
                 }
                 #edit-image-upload.abi-file_control.js-form-managed-file.form-managed-file{
+                    .messages.messages--error.file-upload-js-error{
+                            font-family: 'Montserrat-regular' !important;
+                            font-size: 12px;
+                    }
                     input{
                         display: none;
                     }

@@ -323,6 +323,9 @@
       .abi-form_content .abi-form_group.abi-upload-form .js-form-item.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso label#edit-image-upload--label + label:hover {
         color: white;
         background-color: #E91D76; }
+    .abi-form_content .abi-form_group.abi-upload-form .js-form-item.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso #edit-image-upload.abi-file_control.js-form-managed-file.form-managed-file .messages.messages--error.file-upload-js-error {
+      font-family: 'Montserrat-regular' !important;
+      font-size: 12px; }
     .abi-form_content .abi-form_group.abi-upload-form .js-form-item.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso #edit-image-upload.abi-file_control.js-form-managed-file.form-managed-file input {
       display: none; }
     .abi-form_content .abi-form_group.abi-upload-form .js-form-item.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso #edit-image-upload--description {
