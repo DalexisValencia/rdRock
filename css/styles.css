@@ -387,7 +387,11 @@
         cursor: pointer;
         text-transform: none;
         position: relative;
-        font-size: 1px; }
+        font-size: 1px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
         .abi-form_content .abi-form_group.abi-upload-form div[id^=ajax-wrapper--] .js-form-item.js-form-type-managed-file.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso label:focus + label,
         .abi-form_content .abi-form_group.abi-upload-form div[id^=ajax-wrapper--] .js-form-item.js-form-type-managed-file.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso label + label:hover {
           color: white;
