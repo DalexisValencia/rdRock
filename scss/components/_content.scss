@@ -412,6 +412,16 @@
                         background-color: $primary_color;
                     }
                 }
+                .description{
+                    margin: 20px 0px;
+                    width: 100%;
+                    text-align: center;
+                    display: block;
+                    font: {
+                        family: 'Montserrat-regular' !important;
+                        size: 12px;
+                    }
+                }
                 #edit-image-upload.abi-file_control.js-form-managed-file.form-managed-file{
                     .messages.messages--error.file-upload-js-error{
                             font-family: 'Montserrat-regular' !important;
