@@ -521,6 +521,9 @@
                             background-repeat: no-repeat;
                             background-position: 94% 0px;
                             height: 100%;
+                            @media (min-width: 400px) {
+                                font-size: 3vw;
+                            }
                         }
                     }
                     .abi-file_control.js-form-managed-file.form-managed-file{
