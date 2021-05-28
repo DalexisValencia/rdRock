@@ -389,6 +389,8 @@
         background-repeat: no-repeat;
         background-position: 94% 0px;
         height: 100%; }
+    .abi-form_content .abi-form_group.abi-upload-form div[id^=ajax-wrapper--] .js-form-item.js-form-type-managed-file.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso .abi-file_control.js-form-managed-file.form-managed-file {
+      display: none; }
   .abi-form_content .abi-form_group .max-size-upload {
     margin: 20px 0px;
     width: 100%;
