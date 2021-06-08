@@ -26,14 +26,17 @@
       color: white;
       -webkit-text-stroke-color: black;
       -webkit-text-stroke-width: 1.2px;
-      margin: 15px auto; }
+      margin: 15px auto;
+      text-transform: uppercase; }
     .abi-thanks-page_content article.abi-thanks_section p.more-information {
       width: 80%;
       max-width: 420px;
       font-family: 'Montserrat-regular';
-      font-weight: 100;
+      font-weight: bold;
       font-size: 14px;
       margin: 25px auto; }
+      .abi-thanks-page_content article.abi-thanks_section p.more-information a {
+        color: #000; }
     .abi-thanks-page_content article.abi-thanks_section .abi-actions_thanks button {
       background: #E91D76;
       color: #fff;
@@ -156,17 +159,18 @@
 .abi-form_content {
   padding: 60px 30px 40px;
   background-image: url("../img/backgroud-post-header.svg"); }
-  .abi-home_text_content h1, .abi-home_text_content h2,
-  .abi-form_content h1,
-  .abi-form_content h2 {
+  .abi-home_text_content header h1, .abi-home_text_content header h2, .abi-home_text_content header h3,
+  .abi-form_content header h1,
+  .abi-form_content header h2,
+  .abi-form_content header h3 {
     color: #fff;
     font-family: "Bemio";
     font-style: normal;
     font-weight: bold;
     letter-spacing: -0.02em;
     text-transform: uppercase; }
-  .abi-home_text_content h1,
-  .abi-form_content h1 {
+  .abi-home_text_content header h2,
+  .abi-form_content header h2 {
     width: 68%;
     font-size: 3.6vw;
     line-height: 1.1;
@@ -174,8 +178,8 @@
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 1px;
     margin-bottom: 10px; }
-  .abi-home_text_content h2,
-  .abi-form_content h2 {
+  .abi-home_text_content header h3,
+  .abi-form_content header h3 {
     width: 55%;
     font-size: 2.7vw;
     margin-bottom: 42px;
@@ -185,7 +189,7 @@
     -webkit-text-stroke-width: 1px; }
 
 .abi-form_content {
-  padding: 30px;
+  padding: 70px 90px;
   background-image: url("../img/background-form.png");
   background-size: cover;
   background-position: right;
@@ -246,6 +250,12 @@
       background-size: auto;
       background-repeat: no-repeat;
       background-position: center; }
+  .abi-form_content .abi-form_group h2 {
+    line-height: 22px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Montserrat-regular' !important; }
   .abi-form_content .abi-form_group label, .abi-form_content .abi-form_group input {
     display: block;
     font-family: "Montserrat";
@@ -279,6 +289,15 @@
       color: rgba(0, 0, 0, 0.5);
       font-family: 'Montserrat-regular' !important;
       font-size: 14px; }
+    .abi-form_content .abi-form_group input[type="number"] {
+      -moz-appearance: textfield; }
+      .abi-form_content .abi-form_group input[type="number"]::-webkit-outer-spin-button, .abi-form_content .abi-form_group input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0; }
+    .abi-form_content .abi-form_group input[type="number"] {
+      -webkit-appearance: none;
+      margin: 0;
+      -moz-appearance: textfield; }
   .abi-form_content .abi-form_group.brith-group {
     display: flex;
     flex-wrap: wrap;
@@ -464,7 +483,8 @@
   .abi-how_to h2 {
     text-align: center;
     font-family: "Bemio";
-    font-size: 35px; }
+    font-size: 35px;
+    text-transform: uppercase; }
   .abi-how_to .abi-how_to_image {
     display: inline;
     padding: 10px;
@@ -493,10 +513,14 @@
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
-  position: relative; }
+  position: relative;
+  display: none; }
   .abi-cont_botella_prefooter img {
     margin-bottom: -150px;
     z-index: -1; }
+  @media (max-width: 768px) {
+    .abi-cont_botella_prefooter {
+      display: block; } }
 
 @media (min-width: 1500px) {
   .abi-form_content {
@@ -534,13 +558,13 @@
     .abi-form_content header.abi-home_header_content {
       padding: 40px 30px;
       background-image: url(../img/backgroud-post-header.svg); }
-      .abi-form_content header.abi-home_header_content h1, .abi-form_content header.abi-home_header_content h2 {
+      .abi-form_content header.abi-home_header_content h2, .abi-form_content header.abi-home_header_content h1, .abi-form_content header.abi-home_header_content h3 {
         width: 100%; }
-      .abi-form_content header.abi-home_header_content h1 {
+      .abi-form_content header.abi-home_header_content h2 {
         font-size: 8.6vw;
         word-break: break-word;
         line-height: 0.95; }
-      .abi-form_content header.abi-home_header_content h2 {
+      .abi-form_content header.abi-home_header_content h3 {
         font-size: 5vw;
         margin-bottom: 0px;
         line-height: 1.5; }
@@ -577,13 +601,15 @@
 
 .js-form-item.js-form-type-checkbox {
   display: flex;
-  align-items: flex-start; }
+  align-items: flex-start;
+  margin-bottom: 25px; }
   .js-form-item.js-form-type-checkbox input[type=checkbox] {
     height: 10px;
     width: 10px;
     -webkit-appearance: none;
     -webkit-box-shadow: 0px 0px 0px 1px #E91D76;
-    border-radius: 2px; }
+    border-radius: 2px;
+    margin-top: 3px; }
     .js-form-item.js-form-type-checkbox input[type=checkbox]:checked {
       background-color: #E91D76;
       background-image: url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9.12075 0.215994C9.55376 0.558799 9.62689 1.18773 9.28409 1.62074L4.53409 7.62074C4.34402 7.86083 4.05442 8.0006 3.74821 8.00004C3.44199 7.99948 3.15291 7.85865 2.96372 7.61786L0.213724 4.11786C-0.127489 3.68359 -0.0520506 3.05494 0.382221 2.71372C0.816493 2.37251 1.44515 2.44795 1.78636 2.88222L3.75301 5.38522L7.716 0.379337C8.0588 -0.0536794 8.68773 -0.12681 9.12075 0.215994Z' fill='white'/%3E%3C/svg%3E%0A");
@@ -595,9 +621,19 @@
     font-family: 'Montserrat-regular' !important;
     text-align: left;
     padding-left: 15px; }
+    .js-form-item.js-form-type-checkbox .description a {
+      text-decoration: underline;
+      color: #000; }
+
+@media (max-width: 599px) {
+  .abi-how_to ul {
+    width: 100%; }
+    .abi-how_to ul li {
+      max-width: 100%; } }
 
 #abi-header {
-  background-color: #E91D76; }
+  background-color: #E91D76;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.5); }
   #abi-header nav {
     padding: 8px 30px;
     text-align: center; }

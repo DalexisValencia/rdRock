@@ -45,14 +45,18 @@
             -webkit-text-stroke-color: black;
             -webkit-text-stroke-width: 1.2px;
             margin: 15px auto;
+            text-transform: uppercase;
         }
         p.more-information{
             width: 80%;
             max-width: 420px;
             font-family: 'Montserrat-regular';
-            font-weight: 100;
+            font-weight: bold;
             font-size: 14px;
             margin: 25px auto;
+            a {
+                color: #000
+            }
         }
         .abi-actions_thanks{
             button{
@@ -206,36 +210,38 @@
     background: {
         image: url('../img/backgroud-post-header.svg')
     }
-    h1, h2{
-        color: $color_font_title_primary;
-        font-family: $font_titles_primary;
-        font-style: normal;
-        font-weight: bold;
-        letter-spacing: -0.02em;
-        text-transform: uppercase;
-    }
-    h1{
-        width: 68%;
-        font-size: 3.6vw;
-        line-height: 1.1;
-        margin-bottom: 5px;
-        -webkit-text-stroke-color: black;
-        -webkit-text-stroke-width: 1px;
-        margin-bottom: 10px;
-    }
-    h2{
-        width: 55%;
-        // font-size: 21px;
-        font-size: 2.7vw;
-        margin-bottom: 42px;
-        line-height: 38px;
-        line-height: 1.1;
-        -webkit-text-stroke-color: black;
-        -webkit-text-stroke-width: 1px;
+    header{
+        h1, h2, h3{
+            color: $color_font_title_primary;
+            font-family: $font_titles_primary;
+            font-style: normal;
+            font-weight: bold;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+        }
+        h2{
+            width: 68%;
+            font-size: 3.6vw;
+            line-height: 1.1;
+            margin-bottom: 5px;
+            -webkit-text-stroke-color: black;
+            -webkit-text-stroke-width: 1px;
+            margin-bottom: 10px;
+        }
+        h3{
+            width: 55%;
+            // font-size: 21px;
+            font-size: 2.7vw;
+            margin-bottom: 42px;
+            line-height: 38px;
+            line-height: 1.1;
+            -webkit-text-stroke-color: black;
+            -webkit-text-stroke-width: 1px;
+        }
     }
 }
 .abi-form_content{
-    padding: 30px;
+    padding: 70px 90px;
     background-image: url('../img/background-form.png');
     background-size: cover;
     background-position: right;
@@ -309,6 +315,15 @@
     }
     .abi-form_group{
         // padding: 10px 20px;
+        h2 {
+            line-height: 22px;
+            text-transform: uppercase;
+            font: {
+                size: 15px;
+                weight: bold;
+                family: 'Montserrat-regular' !important;
+            }
+        }
         label, input{
             display: block;
             font: {
@@ -358,6 +373,19 @@
                     size: 14px;
                 }
             }
+            &[type="number"] {
+                &::-webkit-outer-spin-button,
+                &::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+                -moz-appearance: textfield;
+            }
+            &[type="number"] {
+                -webkit-appearance: none;
+                margin: 0;
+                -moz-appearance: textfield;
+            }   
         }
         &.brith-group{
             display: flex;
@@ -591,6 +619,7 @@
         text-align: center;
         font-family: $font_titles_primary;
         font-size: 35px;
+        text-transform: uppercase;
     }
     .abi-how_to_image{
         display: inline;
@@ -625,9 +654,13 @@
     background-repeat: no-repeat;
     z-index: -1;
     position: relative;
+    display: none;
     img {
         margin-bottom: -150px;
         z-index: -1;
+    }
+    @media (max-width: 768px) {
+        display: block;
     }
 }
 @media (min-width: 1500px) {
@@ -687,15 +720,15 @@
             background: {
                 image: url(../img/backgroud-post-header.svg)
             }
-            h1, h2{
+            h2, h1, h3{
                 width: 100%;
             }
-            h1{
+            h2{
                 font-size: 8.6vw;
                 word-break: break-word;
                 line-height: 0.95;
             }
-            h2{
+            h3{
                 font-size: 5vw;
                 margin-bottom: 0px;
                 line-height: 1.5;
@@ -748,12 +781,14 @@
 .js-form-item.js-form-type-checkbox {
     display: flex;
     align-items: flex-start;
+    margin-bottom: 25px;
     input[type=checkbox]{
         height: 10px;
         width: 10px;
         -webkit-appearance: none;
         -webkit-box-shadow: 0px 0px 0px 1px #E91D76;
         border-radius: 2px;
+        margin-top: 3px;
         &:checked{
             background-color: #E91D76;
             background-image: url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9.12075 0.215994C9.55376 0.558799 9.62689 1.18773 9.28409 1.62074L4.53409 7.62074C4.34402 7.86083 4.05442 8.0006 3.74821 8.00004C3.44199 7.99948 3.15291 7.85865 2.96372 7.61786L0.213724 4.11786C-0.127489 3.68359 -0.0520506 3.05494 0.382221 2.71372C0.816493 2.37251 1.44515 2.44795 1.78636 2.88222L3.75301 5.38522L7.716 0.379337C8.0588 -0.0536794 8.68773 -0.12681 9.12075 0.215994Z' fill='white'/%3E%3C/svg%3E%0A");
@@ -769,5 +804,18 @@
         }
         text-align: left;
         padding-left: 15px;
+        a {
+            text-decoration: underline;
+            color: $color_border_inputs;
+        }
+    }
+}
+
+@media (max-width: 599px) {
+    .abi-how_to ul {
+        width: 100%;
+        li{
+            max-width: 100%;
+        }
     }
 }
