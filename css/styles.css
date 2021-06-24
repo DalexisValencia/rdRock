@@ -318,13 +318,12 @@
     .abi-form_content .abi-form_group.brith-group #wrapper-birthday {
       width: 100%;
       display: flex;
-      justify-content: space-between;
-      max-height: 41px; }
+      justify-content: space-between; }
       .abi-form_content .abi-form_group.brith-group #wrapper-birthday .js-form-item {
         width: 30%; }
         .abi-form_content .abi-form_group.brith-group #wrapper-birthday .js-form-item select {
           width: 100%;
-          height: 100%; }
+          height: 41px; }
   .abi-form_content .abi-form_group.abi-upload-form {
     border-bottom: 1.5px solid #E91D76;
     margin-bottom: 30px;
@@ -396,16 +395,20 @@
       .abi-form_content .abi-form_group.abi-upload-form .upload_image_redrock + label:hover {
         color: white;
         background-color: #E91D76; }
-    .abi-form_content .abi-form_group.abi-upload-form div[id^=ajax-wrapper--] div[role="contentinfo"] {
+    .abi-form_content .abi-form_group.abi-upload-form div[id^=ajax-wrapper--] div[id^=edit-image-upload--] input[id^=edit-image-upload-upload--] {
+      display: none; }
+    .abi-form_content .abi-form_group.abi-upload-form div[id^=ajax-wrapper--] div[id^=edit-image-upload--] input[id^=edit-image-upload-upload-button--] {
+      display: none; }
+    .abi-form_content .abi-form_group.abi-upload-form div[id^=ajax-wrapper--].image-uploaded div[role="contentinfo"] {
       font-family: 'Montserrat-regular' !important;
       font-size: 12px;
       color: #e12726; }
-    .abi-form_content .abi-form_group.abi-upload-form div[id^=ajax-wrapper--] .js-form-item.js-form-type-managed-file.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso {
+    .abi-form_content .abi-form_group.abi-upload-form div[id^=ajax-wrapper--].image-uploaded .js-form-item.js-form-type-managed-file.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: center; }
-      .abi-form_content .abi-form_group.abi-upload-form div[id^=ajax-wrapper--] .js-form-item.js-form-type-managed-file.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso label {
+      .abi-form_content .abi-form_group.abi-upload-form div[id^=ajax-wrapper--].image-uploaded .js-form-item.js-form-type-managed-file.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso label[for^=edit-image-upload-upload--] {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: bold;
@@ -425,11 +428,11 @@
         display: flex;
         justify-content: center;
         align-items: center; }
-        .abi-form_content .abi-form_group.abi-upload-form div[id^=ajax-wrapper--] .js-form-item.js-form-type-managed-file.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso label:focus + label,
-        .abi-form_content .abi-form_group.abi-upload-form div[id^=ajax-wrapper--] .js-form-item.js-form-type-managed-file.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso label + label:hover {
+        .abi-form_content .abi-form_group.abi-upload-form div[id^=ajax-wrapper--].image-uploaded .js-form-item.js-form-type-managed-file.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso label[for^=edit-image-upload-upload--]:focus + label,
+        .abi-form_content .abi-form_group.abi-upload-form div[id^=ajax-wrapper--].image-uploaded .js-form-item.js-form-type-managed-file.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso label[for^=edit-image-upload-upload--] + label:hover {
           color: white;
           background-color: #E91D76; }
-        .abi-form_content .abi-form_group.abi-upload-form div[id^=ajax-wrapper--] .js-form-item.js-form-type-managed-file.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso label:before {
+        .abi-form_content .abi-form_group.abi-upload-form div[id^=ajax-wrapper--].image-uploaded .js-form-item.js-form-type-managed-file.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso label[for^=edit-image-upload-upload--]:before {
           content: "Foto cargada exitosamente";
           text-align: center;
           color: #000;
@@ -444,10 +447,10 @@
           font-size: 12px;
           background-size: 6%; }
           @media (max-width: 400px) {
-            .abi-form_content .abi-form_group.abi-upload-form div[id^=ajax-wrapper--] .js-form-item.js-form-type-managed-file.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso label:before {
+            .abi-form_content .abi-form_group.abi-upload-form div[id^=ajax-wrapper--].image-uploaded .js-form-item.js-form-type-managed-file.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso label[for^=edit-image-upload-upload--]:before {
               font-size: 3vw; } }
-      .abi-form_content .abi-form_group.abi-upload-form div[id^=ajax-wrapper--] .js-form-item.js-form-type-managed-file.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso .abi-file_control.js-form-managed-file.form-managed-file {
-        display: none; }
+      .abi-form_content .abi-form_group.abi-upload-form div[id^=ajax-wrapper--].image-uploaded .js-form-item.js-form-type-managed-file.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso .form-managed-file + label[id^=edit-image-upload--] ~ label[id^=edit-image-upload--] {
+        border: 5px solid red !important; }
   .abi-form_content .abi-form_group .max-size-upload {
     margin: 20px 0px;
     width: 100%;
@@ -489,6 +492,26 @@
       padding: 10px 60px;
       font-size: 16px;
       line-height: 28px; }
+
+#upload-paso3 > div {
+  width: 100%; }
+
+div[id^=edit-image-upload--] {
+  margin-top: 10px;
+  text-align: center; }
+  div[id^=edit-image-upload--] span.file.file--image {
+    max-width: 300px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    pointer-events: none; }
+    div[id^=edit-image-upload--] span.file.file--image a {
+      font-size: 12px;
+      pointer-events: none;
+      text-decoration: none;
+      color: #E91D76;
+      font-family: 'Montserrat-regular' !important; }
 
 .abi-how_to {
   background-color: #FDD223;
@@ -620,7 +643,7 @@
 .js-form-item.js-form-type-checkbox {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
   position: relative; }
   .js-form-item.js-form-type-checkbox input[type=checkbox] {
     height: 10px;
@@ -638,7 +661,7 @@
       background-repeat: no-repeat; }
   .js-form-item.js-form-type-checkbox label.error {
     position: absolute;
-    bottom: -20px;
+    top: 31px;
     padding: 0px 35px !important;
     width: -moz-available; }
   .js-form-item.js-form-type-checkbox .description {

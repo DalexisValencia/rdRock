@@ -413,12 +413,13 @@
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
-                max-height: 41px;
+                // max-height: 41px;
                 .js-form-item{
                     width: 30%;
                     select{
                         width: 100%;
-                        height: 100%;
+                        // height: 100%;
+                        height: 41px;
                     }
                 }
             }
@@ -520,18 +521,36 @@
                     background-color: $primary_color;
                 }
             }
+            // id^=edit-image-upload-remove-button--3UPLZf3AId8
             div[id^=ajax-wrapper--]{
-                div[role="contentinfo"]{
+                div[id^=edit-image-upload--]{
+                   // display: none; 
+                   input[id^=edit-image-upload-upload--]{
+                       display: none;
+                    //    border: 1px solid blue;
+                   }
+                   input[id^=edit-image-upload-upload-button--]{
+                       display: none;
+                    // border: 1px solid magenta;
+                   }
+                }
+            }
+            div[id^=ajax-wrapper--].image-uploaded {
+                // border: 1px solid black;
+                div[role="contentinfo"] {
                     font-family: 'Montserrat-regular' !important;
                     font-size: 12px;
                     color: #e12726;
                 }
+                // div[id^=edit-image-upload-upload--] {
+
+                // }
                 .js-form-item.js-form-type-managed-file.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso{
                     display: flex;
                     flex-wrap: wrap;
                     align-items: center;
                     justify-content: center;
-                    label {
+                    label[for^=edit-image-upload-upload--] {
                         font: {
                             family: $general_font;
                             style: normal;
@@ -578,9 +597,12 @@
                             }
                         }
                     }
-                    .abi-file_control.js-form-managed-file.form-managed-file{
-                        display: none;
+                    
+                    .form-managed-file + label[id^=edit-image-upload--] ~ label[id^=edit-image-upload--]{
+                        border: 5px solid red !important;
                     }
+                    // label[for^=edit-image-upload-upload--] {
+                    // }
                 }
             }
         }
@@ -629,6 +651,36 @@
         }
     }
 }
+#upload-paso3 > div{
+    width: 100%;
+    text-align: center;
+    div[id^=ajax-wrapper--]{
+        .js-form-item{
+            text-align: center;
+        }
+    }
+}
+
+div[id^=edit-image-upload--] {
+    margin-top: 10px;
+    text-align: center;
+    span.file.file--image{
+        max-width: 300px;
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        pointer-events: none;
+        a {
+            font-size: 12px;
+            pointer-events: none;
+            text-decoration: none;
+            color: #E91D76;
+            font-family: 'Montserrat-regular' !important;
+        }
+    }
+}
+
 .abi-how_to{
     background-color: $secondary_color;
     padding: 30px 30px;
@@ -803,7 +855,7 @@
 .js-form-item.js-form-type-checkbox {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
     position: relative;
     input[type=checkbox]{
         height: 10px;
@@ -823,7 +875,7 @@
     }
     label.error{
         position: absolute;
-        bottom: -20px;
+        top: 31px;
         padding: 0px 35px !important;
         width: -moz-available;
     }
