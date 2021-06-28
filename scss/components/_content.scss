@@ -1,4 +1,3 @@
-
 @mixin btn-primary {
     background: $primary_color;
     color: $color_font_btns;
@@ -13,7 +12,8 @@
     font-size: 16px;
     line-height: 28px;
 }
-.abi-thanks-page_content{
+
+.abi-thanks-page_content {
     height: 90vh;
     width: 100%;
     display: flex;
@@ -24,7 +24,7 @@
         size: cover;
         position: center;
     }
-    article.abi-thanks_section{
+    article.abi-thanks_section {
         text-align: center;
         margin-top: -5%;
         h1 {
@@ -35,7 +35,7 @@
             -webkit-text-stroke-color: black;
             -webkit-text-stroke-width: 1px;
         }
-        .keep-trying{
+        .keep-trying {
             width: 80%;
             max-width: 420px;
             font-family: 'Bemio';
@@ -47,7 +47,7 @@
             margin: 15px auto;
             text-transform: uppercase;
         }
-        .more-information{
+        .more-information {
             width: 80%;
             max-width: 420px;
             font-family: 'Montserrat-regular';
@@ -59,9 +59,9 @@
                 font-weight: bold;
             }
         }
-        .abi-actions_thanks{
-            button{
-                @include btn-primary; 
+        .abi-actions_thanks {
+            button {
+                @include btn-primary;
             }
         }
     }
@@ -69,22 +69,22 @@
         background: {
             image: url('../img/thanks/thanks-mobile.png');
         }
-        article.abi-thanks_section{
+        article.abi-thanks_section {
             h1 {
                 font-size: 35px;
             }
-            p.more-information{
+            p.more-information {
                 font-size: 16px;
             }
-            p.more-information{
+            p.more-information {
                 font-size: 12px;
             }
         }
     }
 }
 
-.abi-legal-page_content{
-    .abi-legal_header{
+.abi-legal-page_content {
+    .abi-legal_header {
         width: 100%;
         height: 10vw;
         max-height: 149px;
@@ -95,7 +95,7 @@
             size: cover;
             position: center;
         }
-        h2{
+        h2 {
             padding: 0px 30px;
             font-size: 32px;
             font-family: 'Montserrat';
@@ -105,29 +105,29 @@
             background: {
                 image: url('../img/legal/footer-mobile-header.png');
             }
-            h2{
+            h2 {
                 padding: 0px 20px;
                 font-size: 25px;
                 font-family: 'Montserrat';
             }
         }
         @media (max-width: 400px) {
-            h2{
+            h2 {
                 font-size: 6vw;
             }
         }
     }
-    article.abi-legal_container{
+    article.abi-legal_container {
         padding: 20px 30px;
         font-family: 'Montserrat-regular';
         font-size: 16px;
         @media (max-width: 768px) {
-           font-size: 12px;
+            font-size: 12px;
         }
     }
 }
 
-.abi-404-page_content{
+.abi-404-page_content {
     height: 90vh;
     width: 100%;
     display: flex;
@@ -138,17 +138,17 @@
         size: cover;
         position: center;
     }
-    article.abi-404_section{
+    article.abi-404_section {
         text-align: center;
         margin-top: -5%;
         padding: 0px 20px;
-        h2{
+        h2 {
             &:not(.upps-title) {
                 font-size: 45px;
                 font-family: 'Bemio';
                 color: black;
             }
-            &.upps-title{
+            &.upps-title {
                 margin: 20px 0px;
                 margin-bottom: 30px;
                 font-family: 'Bemio';
@@ -159,7 +159,7 @@
                 -webkit-text-stroke-width: 0.7px;
             }
         }
-        .keep-trying{
+        .keep-trying {
             width: 80%;
             max-width: 420px;
             font-family: 'Bemio';
@@ -170,7 +170,7 @@
             -webkit-text-stroke-width: 1.2px;
             margin: 15px auto;
         }
-        .more-information{
+        .more-information {
             width: 80%;
             max-width: 420px;
             font-family: 'Montserrat-regular';
@@ -178,9 +178,9 @@
             font-size: 14px;
             margin: 25px auto;
         }
-        .abi-actions_thanks{
-            button{
-                @include btn-primary; 
+        .abi-actions_thanks {
+            button {
+                @include btn-primary;
             }
         }
     }
@@ -188,31 +188,30 @@
         background: {
             image: url('../img/404/404-mobile.png');
         }
-        article.abi-thanks_section{
+        article.abi-thanks_section {
             h1 {
                 font-size: 35px;
             }
-            p.more-information{
+            p.more-information {
                 font-size: 16px;
             }
-            p.more-information{
+            p.more-information {
                 font-size: 12px;
             }
         }
     }
 }
 
-
-
 .abi-home_text_content,
-.abi-form_content
-{
+.abi-form_content {
     padding: 60px 30px 40px;
     background: {
         image: url('../img/backgroud-post-header.svg')
     }
-    header{
-        h1, h2, h3{
+    header {
+        h1,
+        h2,
+        h3 {
             color: $color_font_title_primary;
             font-family: $font_titles_primary;
             font-style: normal;
@@ -220,7 +219,7 @@
             letter-spacing: -0.02em;
             text-transform: uppercase;
         }
-        h2{
+        h2 {
             width: 68%;
             font-size: 3.6vw;
             line-height: 1.1;
@@ -229,7 +228,7 @@
             -webkit-text-stroke-width: 1px;
             margin-bottom: 10px;
         }
-        h3{
+        h3 {
             width: 55%;
             // font-size: 21px;
             font-size: 2.7vw;
@@ -241,7 +240,8 @@
         }
     }
 }
-.abi-form_content{
+
+.abi-form_content {
     padding: 70px 90px;
     background-image: url('../img/background-form.png');
     background-size: cover;
@@ -250,21 +250,21 @@
     max-width: 1444px;
     // width: 100%;
     height: 83vw;
-    form{
+    form {
         display: flex;
         // justify-content: space-between;
         width: 100%;
-        #abi-form_content__first_step{
+        #abi-form_content__first_step {
             padding: 25px;
             width: 50%;
             max-width: 396px;
             min-width: 356px;
             background-color: rgba($color_line_footer, 0.9);
-            .abi-form_group{
+            .abi-form_group {
                 padding: 10px 20px 20px;
             }
         }
-        #abi-form_content__second_third_step{
+        #abi-form_content__second_third_step {
             margin-left: 40px;
             box-sizing: border-box;
             padding: 25px;
@@ -276,15 +276,15 @@
             background-color: rgba($color_line_footer, 0.9);
         }
     }
-    .abi-step_form_header{
-        font-family: $font_titles_primary; 
+    .abi-step_form_header {
+        font-family: $font_titles_primary;
         color: $primary_color;
         font-weight: bold;
         text-transform: uppercase;
         position: relative;
         font-size: 24px;
         margin: 15px 0px;
-        &::before{
+        &::before {
             content: '';
             background-color: $primary_color;
             width: calc(65% - 44px);
@@ -295,7 +295,7 @@
             position: absolute;
             right: 44px;
         }
-        &::after{
+        &::after {
             content: '';
             border: 1px solid $primary_color;
             border-radius: 50%;
@@ -311,10 +311,10 @@
                 size: auto;
                 repeat: no-repeat;
                 position: center;
-            } 
+            }
         }
     }
-    .abi-form_group{
+    .abi-form_group {
         // padding: 10px 20px;
         h2 {
             line-height: 22px;
@@ -325,7 +325,8 @@
                 family: 'Montserrat-regular' !important;
             }
         }
-        label, input{
+        label,
+        input {
             display: block;
             font: {
                 family: $general_font;
@@ -334,28 +335,28 @@
                 size: 14px;
             }
         }
-        label:not(.error){
+        label:not(.error) {
             line-height: 22px;
             font-size: 14px;
             text-transform: uppercase;
             font-weight: bold;
         }
-        label.error{
+        label.error {
             font-family: 'Montserrat-regular' !important;
             font-size: 12px;
             line-height: 1.2;
             text-transform: lowercase;
             color: #e12726;
             font-weight: 100;
-            &::first-letter{
+            &::first-letter {
                 text-transform: uppercase;
             }
         }
-        input:not(input[type=checkbox]){
+        input:not(input[type=checkbox]) {
             background-color: transparent;
             width: 100%;
             padding: 10px;
-            box-sizing: border-box; 
+            box-sizing: border-box;
             -moz-box-sizing: border-box;
             -webkit-box-sizing: border-box;
             border: none;
@@ -377,7 +378,7 @@
                 box-shadow: 0 0 0 30px white inset !important;
                 -webkit-box-shadow: 0 0 0 30px white inset !important;
             }
-            &::placeholder{
+            &::placeholder {
                 font-weight: normal !important;
                 color: rgba(#000, 0.5);
                 font: {
@@ -397,42 +398,42 @@
                 -webkit-appearance: none;
                 margin: 0;
                 -moz-appearance: textfield;
-            }   
+            }
         }
-        &.brith-group{
+        &.brith-group {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            label{
+            label {
                 width: 100%;
             }
-            select{
+            select {
                 width: 30%;
             }
-            #wrapper-birthday{
+            #wrapper-birthday {
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
                 // max-height: 41px;
-                .js-form-item{
+                .js-form-item {
                     width: 30%;
-                    select{
+                    select {
                         width: 100%;
                         // height: 100%;
-                        height: 41px;
+                        height: 39px;
                     }
                 }
             }
         }
-        &.abi-upload-form{
+        &.abi-upload-form {
             border-bottom: 1.5px solid $primary_color;
             margin-bottom: 30px;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            .js-form-item.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso{
+            .js-form-item.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso {
                 label[id^=edit-image-upload],
-                label#edit-image-upload--label{
+                label#edit-image-upload--label {
                     font: {
                         family: $general_font;
                         style: normal;
@@ -448,13 +449,13 @@
                     display: inline-block;
                     cursor: pointer;
                     text-transform: none;
-                    &:focus + label,
-                    & + label:hover {
+                    &:focus+label,
+                    &+label:hover {
                         color: white;
                         background-color: $primary_color;
                     }
                 }
-                .description{
+                .description {
                     margin: 20px 0px;
                     width: 100%;
                     text-align: center;
@@ -464,16 +465,16 @@
                         size: 12px;
                     }
                 }
-                #edit-image-upload.abi-file_control.js-form-managed-file.form-managed-file{
-                    .messages.messages--error.file-upload-js-error{
-                            font-family: 'Montserrat-regular' !important;
-                            font-size: 12px;
+                #edit-image-upload.abi-file_control.js-form-managed-file.form-managed-file {
+                    .messages.messages--error.file-upload-js-error {
+                        font-family: 'Montserrat-regular' !important;
+                        font-size: 12px;
                     }
-                    input{
+                    input {
                         display: none;
                     }
                 }
-                #edit-image-upload--description{
+                #edit-image-upload--description {
                     margin: 20px 0px;
                     width: 100%;
                     text-align: center;
@@ -484,14 +485,14 @@
                     }
                 }
             }
-            .upload_image_redrock{
+            .upload_image_redrock {
                 width: 0.1px;
                 height: 0.1px;
                 opacity: 0;
                 overflow: hidden;
                 position: absolute;
                 z-index: -1;
-                & + label {
+                &+label {
                     font: {
                         family: $general_font;
                         style: normal;
@@ -513,26 +514,26 @@
                 // }
                 // &:focus + label{
                 //     outline: 1px dotted #000;
-	            //     outline: -webkit-focus-ring-color auto 5px;
+                //     outline: -webkit-focus-ring-color auto 5px;
                 // }
-                &:focus + label,
-                & + label:hover {
+                &:focus+label,
+                &+label:hover {
                     color: white;
                     background-color: $primary_color;
                 }
             }
             // id^=edit-image-upload-remove-button--3UPLZf3AId8
-            div[id^=ajax-wrapper--]{
-                div[id^=edit-image-upload--]{
-                   // display: none; 
-                   input[id^=edit-image-upload-upload--]{
-                       display: none;
-                    //    border: 1px solid blue;
-                   }
-                   input[id^=edit-image-upload-upload-button--]{
-                       display: none;
-                    // border: 1px solid magenta;
-                   }
+            div[id^=ajax-wrapper--] {
+                div[id^=edit-image-upload--] {
+                    // display: none; 
+                    input[id^=edit-image-upload-upload--] {
+                        display: none;
+                        //    border: 1px solid blue;
+                    }
+                    input[id^=edit-image-upload-upload-button--] {
+                        display: none;
+                        // border: 1px solid magenta;
+                    }
                 }
             }
             div[id^=ajax-wrapper--].image-uploaded {
@@ -543,9 +544,8 @@
                     color: #e12726;
                 }
                 // div[id^=edit-image-upload-upload--] {
-
                 // }
-                .js-form-item.js-form-type-managed-file.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso{
+                .js-form-item.js-form-type-managed-file.form-item-sube-una-foto-con-tu-red-rock-sabor-misterioso {
                     display: flex;
                     flex-wrap: wrap;
                     align-items: center;
@@ -572,16 +572,16 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        &:focus + label,
-                        & + label:hover {
+                        &:focus+label,
+                        &+label:hover {
                             color: white;
                             background-color: $primary_color;
                         }
-                        &:before{
+                        &:before {
                             content: "Foto cargada exitosamente";
                             text-align: center;
                             color: #000;
-                            width: 100%; 
+                            width: 100%;
                             display: block;
                             margin: 0px auto;
                             position: absolute;
@@ -597,8 +597,7 @@
                             }
                         }
                     }
-                    
-                    .form-managed-file + label[id^=edit-image-upload--] ~ label[id^=edit-image-upload--]{
+                    .form-managed-file+label[id^=edit-image-upload--]~label[id^=edit-image-upload--] {
                         border: 5px solid red !important;
                     }
                     // label[for^=edit-image-upload-upload--] {
@@ -606,7 +605,7 @@
                 }
             }
         }
-        .max-size-upload{
+        .max-size-upload {
             margin: 20px 0px;
             width: 100%;
             text-align: center;
@@ -616,7 +615,7 @@
                 size: 12px;
             }
         }
-        select{
+        select {
             width: 100%;
             display: inline-block;
             height: 37px;
@@ -643,19 +642,20 @@
             }
         }
     }
-    .abi-actions_form{
+    .abi-actions_form {
         text-align: center;
         .input-send-button,
-        button{
-            @include btn-primary; 
+        button {
+            @include btn-primary;
         }
     }
 }
-#upload-paso3 > div{
+
+#upload-paso3>div {
     width: 100%;
     text-align: center;
-    div[id^=ajax-wrapper--]{
-        .js-form-item{
+    div[id^=ajax-wrapper--] {
+        .js-form-item {
             text-align: center;
         }
     }
@@ -664,8 +664,9 @@
 div[id^=edit-image-upload--] {
     margin-top: 10px;
     text-align: center;
-    span.file.file--image{
+    span.file.file--image {
         max-width: 300px;
+        margin: 0px auto;
         display: block;
         overflow: hidden;
         white-space: nowrap;
@@ -681,34 +682,35 @@ div[id^=edit-image-upload--] {
     }
 }
 
-input[data-drupal-selector="edit-image-upload-remove-button"]{
+input[data-drupal-selector="edit-image-upload-remove-button"] {
     cursor: pointer;
     border-radius: 25px;
     width: 150px !important;
     margin: 0px auto;
-    &:not(:hover){
+    &:not(:hover) {
         background-color: #e91d76 !important;
     }
     color: #fff;
     border-bottom-color: transparent !important;
     margin-top: 10px;
-    &:hover{
+    &:hover {
         background-color: #ffaed1 !important;
         color: #000;
     }
 }
 
-.abi-how_to{
+.abi-how_to {
     background-color: $secondary_color;
     padding: 30px 30px;
     padding-bottom: 70px;
-    > h2, > h3{
+    >h2,
+    >h3 {
         text-align: center;
         font-family: $font_titles_primary;
         font-size: 35px;
         text-transform: uppercase;
     }
-    .abi-how_to_image{
+    .abi-how_to_image {
         display: inline;
         padding: 10px;
         height: 60px;
@@ -721,12 +723,12 @@ input[data-drupal-selector="edit-image-upload-remove-button"]{
         display: flex;
         justify-content: center;
         align-items: center;
-        li{
+        li {
             padding: 0px 40px;
             width: 266px;
             text-align: center;
-            > p,
-            > h3 {
+            >p,
+            >h3 {
                 padding: 0px 19px;
                 font-size: 18px;
                 font-family: 'MuseoSans_700';
@@ -734,7 +736,8 @@ input[data-drupal-selector="edit-image-upload-remove-button"]{
         }
     }
 }
-.abi-cont_botella_prefooter{
+
+.abi-cont_botella_prefooter {
     text-align: center;
     background-image: url(../img/backgroud-pre-footer.svg);
     background-position: center;
@@ -751,25 +754,27 @@ input[data-drupal-selector="edit-image-upload-remove-button"]{
         display: block !important;
     }
 }
+
 @media (min-width: 1500px) {
-    .abi-form_content{
+    .abi-form_content {
         height: unset !important;
         max-width: unset !important;
         background-position: top;
     }
 }
+
 @media (max-width: 1269px) {
-    .abi-form_content{
+    .abi-form_content {
         height: unset;
     }
-    .abi-how_to{
+    .abi-how_to {
         padding: 30px 20px;
         padding-bottom: 60px !important;
-        ul{
-            li{
+        ul {
+            li {
                 padding: 0px 20px;
-                > p,
-                > h3{
+                >p,
+                >h3 {
                     padding: 0px;
                 }
             }
@@ -778,68 +783,71 @@ input[data-drupal-selector="edit-image-upload-remove-button"]{
 }
 
 @media (max-width: 900px) {
-    .abi-form_content{
-        form{
+    .abi-form_content {
+        form {
             #abi-form_content__first_step,
-            #abi-form_content__second_third_step{
+            #abi-form_content__second_third_step {
                 width: 55%;
                 max-width: auto;
                 min-width: auto;
             }
         }
     }
-    .abi-how_to{
-        ul{
-            li{
+    .abi-how_to {
+        ul {
+            li {
                 padding: 0px 20px;
-                > p,
-                > h3{
+                >p,
+                >h3 {
                     font-size: 15px;
                 }
             }
         }
     }
 }
+
 @media (max-width: 768px) {
-    .abi-form_content{
+    .abi-form_content {
         border: 1px solid white;
         padding: 0px !important;
         background-image: unset;
-        header.abi-home_header_content{
+        header.abi-home_header_content {
             padding: 40px 30px;
             background: {
                 image: url(../img/backgroud-post-header.svg)
             }
-            h2, h1, h3{
+            h2,
+            h1,
+            h3 {
                 width: 100%;
             }
-            h2{
+            h2 {
                 font-size: 8.6vw;
                 word-break: break-word;
                 line-height: 0.95;
             }
-            h3{
+            h3 {
                 font-size: 5vw;
                 margin-bottom: 0px;
                 line-height: 1.5;
             }
         }
-        form{
+        form {
             flex-wrap: wrap;
             justify-content: center;
             #abi-form_content__first_step,
-            #abi-form_content__second_third_step{
+            #abi-form_content__second_third_step {
                 width: 100%;
                 max-width: 414px;
                 min-width: auto;
             }
-            #abi-form_content__second_third_step{
+            #abi-form_content__second_third_step {
                 margin: 0px;
-                .abi-form_group{
+                .abi-form_group {
                     padding: 10px 20px 20px;
-                    &.abi-upload-form{
+                    &.abi-upload-form {
                         padding-bottom: 0px;
-                        label{
+                        label {
                             padding: 1px 27px;
                         }
                     }
@@ -848,21 +856,22 @@ input[data-drupal-selector="edit-image-upload-remove-button"]{
             }
         }
     }
-    .abi-how_to{
-        ul{
+    .abi-how_to {
+        ul {
             flex-wrap: wrap;
             width: 300px;
             margin: 0px auto;
             margin-top: 50px;
-            li{
+            li {
                 max-width: 260px;
                 padding: 30px 0px;
                 width: 100%;
                 text-align: center;
-                > p,
-                > h3{
+                >p,
+                >h3 {
                     font-size: 15px;
-                    padding: 0px 35px;;
+                    padding: 0px 35px;
+                    ;
                 }
             }
         }
@@ -874,7 +883,7 @@ input[data-drupal-selector="edit-image-upload-remove-button"]{
     align-items: flex-start;
     margin-bottom: 35px;
     position: relative;
-    input[type=checkbox]{
+    input[type=checkbox] {
         height: 15px;
         width: 15px;
         -webkit-appearance: none;
@@ -882,7 +891,7 @@ input[data-drupal-selector="edit-image-upload-remove-button"]{
         box-shadow: 0px 0px 0px 1px #E91D76;
         border-radius: 2px;
         margin-top: 3px;
-        &:checked{
+        &:checked {
             background-color: #E91D76;
             background-image: url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9.12075 0.215994C9.55376 0.558799 9.62689 1.18773 9.28409 1.62074L4.53409 7.62074C4.34402 7.86083 4.05442 8.0006 3.74821 8.00004C3.44199 7.99948 3.15291 7.85865 2.96372 7.61786L0.213724 4.11786C-0.127489 3.68359 -0.0520506 3.05494 0.382221 2.71372C0.816493 2.37251 1.44515 2.44795 1.78636 2.88222L3.75301 5.38522L7.716 0.379337C8.0588 -0.0536794 8.68773 -0.12681 9.12075 0.215994Z' fill='white'/%3E%3C/svg%3E%0A");
             background-position: center;
@@ -890,13 +899,13 @@ input[data-drupal-selector="edit-image-upload-remove-button"]{
             background-repeat: no-repeat;
         }
     }
-    label.error{
+    label.error {
         position: absolute;
         top: 31px;
         padding: 0px 35px !important;
         width: -moz-available;
     }
-    .description{
+    .description {
         font: {
             size: 12px;
             family: 'Montserrat-regular' !important;
@@ -913,12 +922,13 @@ input[data-drupal-selector="edit-image-upload-remove-button"]{
 @media (max-width: 599px) {
     .abi-how_to ul {
         width: 100%;
-        li{
+        li {
             max-width: 100%;
         }
     }
 }
-.error-form{
+
+.error-form {
     font-family: 'Montserrat-regular' !important;
     font-size: 12px;
     color: #e12726;
