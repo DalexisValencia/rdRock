@@ -326,7 +326,8 @@
             }
         }
     }
-    #abi-form_content__second_third_step .abi-step_form_header:nth-child(3) {
+    #abi-form_content__second_third_step .abi-step_form_header:nth-child(3),
+    #abi-form_content__second_third_step .abi-step_form_header:nth-child(1) {
         color: #2EC924 !important;
         &::before {
             background-color: #2EC924;
