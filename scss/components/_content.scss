@@ -314,6 +314,30 @@
             }
         }
     }
+    #abi-form_content__first_step .abi-step_form_header:nth-child(1) {
+        color: #00B2E2 !important;
+        &::before {
+            background-color: #00B2E2;
+        }
+        &::after {
+            border: 1px solid #00B2E2;
+            background: {
+                image: url(../img/check-blue.svg);
+            }
+        }
+    }
+    #abi-form_content__second_third_step .abi-step_form_header:nth-child(3) {
+        color: #2EC924 !important;
+        &::before {
+            background-color: #2EC924;
+        }
+        &::after {
+            border: 1px solid #2EC924;
+            background: {
+                image: url(../img/check-green.svg);
+            }
+        }
+    }
     .abi-form_group {
         // padding: 10px 20px;
         h2 {

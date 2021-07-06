@@ -159,7 +159,9 @@
 .abi-form_content {
   padding: 60px 30px 40px;
   background-image: url("../img/backgroud-post-header.svg"); }
-  .abi-home_text_content header h1, .abi-home_text_content header h2, .abi-home_text_content header h3,
+  .abi-home_text_content header h1,
+  .abi-home_text_content header h2,
+  .abi-home_text_content header h3,
   .abi-form_content header h1,
   .abi-form_content header h2,
   .abi-form_content header h3 {
@@ -250,13 +252,28 @@
       background-size: auto;
       background-repeat: no-repeat;
       background-position: center; }
+  .abi-form_content #abi-form_content__first_step .abi-step_form_header:nth-child(1) {
+    color: #00B2E2 !important; }
+    .abi-form_content #abi-form_content__first_step .abi-step_form_header:nth-child(1)::before {
+      background-color: #00B2E2; }
+    .abi-form_content #abi-form_content__first_step .abi-step_form_header:nth-child(1)::after {
+      border: 1px solid #00B2E2;
+      background-image: url(../img/check-blue.svg); }
+  .abi-form_content #abi-form_content__second_third_step .abi-step_form_header:nth-child(3) {
+    color: #2EC924 !important; }
+    .abi-form_content #abi-form_content__second_third_step .abi-step_form_header:nth-child(3)::before {
+      background-color: #2EC924; }
+    .abi-form_content #abi-form_content__second_third_step .abi-step_form_header:nth-child(3)::after {
+      border: 1px solid #2EC924;
+      background-image: url(../img/check-green.svg); }
   .abi-form_content .abi-form_group h2 {
     line-height: 22px;
     text-transform: uppercase;
     font-size: 15px;
     font-weight: bold;
     font-family: 'Montserrat-regular' !important; }
-  .abi-form_content .abi-form_group label, .abi-form_content .abi-form_group input {
+  .abi-form_content .abi-form_group label,
+  .abi-form_content .abi-form_group input {
     display: block;
     font-family: "Montserrat";
     font-style: normal;
@@ -323,7 +340,7 @@
         width: 30%; }
         .abi-form_content .abi-form_group.brith-group #wrapper-birthday .js-form-item select {
           width: 100%;
-          height: 41px; }
+          height: 39px; }
   .abi-form_content .abi-form_group.abi-upload-form {
     border-bottom: 1.5px solid #E91D76;
     margin-bottom: 30px;
@@ -504,6 +521,7 @@ div[id^=edit-image-upload--] {
   text-align: center; }
   div[id^=edit-image-upload--] span.file.file--image {
     max-width: 300px;
+    margin: 0px auto;
     display: block;
     overflow: hidden;
     white-space: nowrap;
@@ -534,7 +552,8 @@ input[data-drupal-selector="edit-image-upload-remove-button"] {
   background-color: #FDD223;
   padding: 30px 30px;
   padding-bottom: 70px; }
-  .abi-how_to > h2, .abi-how_to > h3 {
+  .abi-how_to > h2,
+  .abi-how_to > h3 {
     text-align: center;
     font-family: "Bemio";
     font-size: 35px;
@@ -615,7 +634,9 @@ input[data-drupal-selector="edit-image-upload-remove-button"] {
     .abi-form_content header.abi-home_header_content {
       padding: 40px 30px;
       background-image: url(../img/backgroud-post-header.svg); }
-      .abi-form_content header.abi-home_header_content h2, .abi-form_content header.abi-home_header_content h1, .abi-form_content header.abi-home_header_content h3 {
+      .abi-form_content header.abi-home_header_content h2,
+      .abi-form_content header.abi-home_header_content h1,
+      .abi-form_content header.abi-home_header_content h3 {
         width: 100%; }
       .abi-form_content header.abi-home_header_content h2 {
         font-size: 8.6vw;
